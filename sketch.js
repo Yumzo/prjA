@@ -7,7 +7,8 @@ let moveY=35
 let reactDistance=180
 let escapeDistance=110
 function setup(){
-  createCanvas(800,500)
+  let cnv=createCanvas(800,500)
+  cnv.parent("canvas-container")
   randomizeMelo()
 }
 
