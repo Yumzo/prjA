@@ -1,18 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
-    
-    
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+  <title>Melo — Interactive Creature</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+</head>
+
+<body>
+
+  <div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <div class="logoDot"></div>
+      MELO
+    </div>
+
+    <div class="navRight">
+      Interactive Creature
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="info">
+
+        <div class="tag">
+          p5.js Interactive Project
+        </div>
+
+        <h1>
+          Meet
+          <span>Melo.</span>
+        </h1>
+
+        <p class="description">
+          A small interactive creature living in a digital underwater world.
+          Melo swims, watches you, reacts to your cursor and changes every time
+          you interact with it.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">
+            <div class="icon">◎</div>
+            <div>
+              <h3>Move your mouse</h3>
+              <p>Melo watches and reacts to you.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">✦</div>
+            <div>
+              <h3>Get closer</h3>
+              <p>Its movement and appearance change.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="icon">↻</div>
+            <div>
+              <h3>Click Melo</h3>
+              <p>Generate a new mutation.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="projectSide">
+
+        <div class="projectWindow">
+
+          <div class="windowTop">
+
+            <div class="windowDots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <p>melo_world.p5</p>
+
+            <div class="live">
+              <span></span>
+              LIVE
+            </div>
+
+          </div>
+
+          <div id="canvas-container"></div>
+
+        </div>
+
+        <p class="hint">
+          Move your cursor around Melo and click the creature.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="about">
+
+      <div>
+        <p class="sectionLabel">THE PROJECT</p>
+
+        <h2>
+          Built to feel
+          <span>alive.</span>
+        </h2>
+      </div>
+
+      <div class="aboutText">
+        <p>
+          Melo uses smooth mathematical movement, mouse-distance detection and
+          procedural variation to create a simple character that feels responsive.
+        </p>
+
+        <p>
+          The project was created with JavaScript and p5.js as an exploration of
+          animation, interaction and creative coding.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>MELO / 2026</p>
+    <p>Made with p5.js</p>
+  </footer>
+
+
+  <script src="sketch.js"></script>
+</body>
 </html>
